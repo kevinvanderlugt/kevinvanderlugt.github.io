@@ -1,16 +1,30 @@
 ---
 ---
 
+@import "normalize";
 @import "bourbon/bourbon";
 // @import "grid-settings";
 @import "neat/neat";
 
 body {
+  border-top: 3px solid #FC4421;
+}
+
+div.container {
   @include outer-container;
 }
+
 nav.sidebar {
   @include span-columns(3);
+
+  background-color: #ECF1F4;
 }
+
 .page-content {
-  @include span-columns(12);
+  @include span-columns(9);
+}
+
+header {
+  background-color: #FC4421;
+  height: 2px;
 }
