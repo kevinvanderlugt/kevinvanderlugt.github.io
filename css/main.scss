@@ -1,0 +1,16 @@
+---
+---
+
+@import "bourbon/bourbon";
+// @import "grid-settings";
+@import "neat/neat";
+
+body {
+  @include outer-container;
+}
+nav.sidebar {
+  @include span-columns(3);
+}
+.page-content {
+  @include span-columns(12);
+}
