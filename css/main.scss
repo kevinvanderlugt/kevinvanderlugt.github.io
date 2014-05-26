@@ -3,28 +3,41 @@
 
 @import "normalize";
 @import "bourbon/bourbon";
-// @import "grid-settings";
+@import "grid_settings";
 @import "neat/neat";
 
 body {
-  border-top: 3px solid #FC4421;
+  border-top: 4px solid #595992;
+  background-color: #F8F9FA;
+  color: #3E3D4B;
+
+  font-family: 'Open Sans', sans-serif;
 }
 
 div.container {
   @include outer-container;
+  padding-top: 20px;
 }
 
 nav.sidebar {
-  @include span-columns(3);
-
-  background-color: #ECF1F4;
+  @include span-columns(4);
 }
 
 .page-content {
-  @include span-columns(9);
+  @include span-columns(8);
+
+  border-left: em(1px) solid #B2B2C6;
+  padding-left: em(20px);
 }
 
-header {
-  background-color: #FC4421;
-  height: 2px;
+h1 {
+  color: #211B44;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 }
+
+// Purple Theme
+// Header: #595992
+// Divider: #B2B2C6
+// Background: #F8F9FA
+// Text? #211B44
