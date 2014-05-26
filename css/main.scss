@@ -6,6 +6,9 @@
 @import "grid_settings";
 @import "neat/neat";
 
+@import "post";
+@import "syntax";
+
 body {
   border-top: 4px solid #595992;
   background-color: #F8F9FA;
@@ -16,7 +19,7 @@ body {
 
 div.container {
   @include outer-container;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 nav.sidebar {

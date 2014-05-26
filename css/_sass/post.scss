@@ -1,0 +1,20 @@
+section.post {
+
+  header {
+    @include margin(0px null 25px null);
+    h1 {
+      @include margin(0px null 0px null);
+    }
+  }
+
+  article {
+    font-size: em(16px);
+    line-height: em(25px);
+  }
+
+  footer {
+    @include margin(30px null 20px null);
+    font-size: em(14px);
+    color: #706F89;
+  }
+}
