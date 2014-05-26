@@ -6,17 +6,19 @@
 @import "grid_settings";
 @import "neat/neat";
 
-@import "post";
-@import "syntax";
-
 // Purple Theme
 // Header: #595992
+$primary-color: #595992;
 // Divider: #B2B2C6
 // Background: #F8F9FA
 // Text? #211B44
 
+@import "post";
+@import "syntax";
+@import "sidenav";
+
 body {
-  border-top: 4px solid #595992;
+  border-top: 4px solid $primary-color;
   background-color: #F8F9FA;
   color: #3E3D4B;
 
@@ -28,15 +30,17 @@ div.container {
   padding-top: 30px;
 }
 
-nav.sidebar {
-  @include span-columns(4);
-}
-
 .page-content {
   @include span-columns(8);
-
   border-left: em(1px) solid #B2B2C6;
   padding-left: em(20px);
+
+  @include media(max-width 480px) {
+    @include span-columns(10);
+    @include shift(1);
+    padding-left: 0px;
+    border-left: none;
+  }
 }
 
 h1 {
@@ -50,6 +54,6 @@ a {
   color: #5062C7;
 }
 a:visited {
-  color: #595992;
+  color: $primary-color;
 }
 
