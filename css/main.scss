@@ -9,6 +9,12 @@
 @import "post";
 @import "syntax";
 
+// Purple Theme
+// Header: #595992
+// Divider: #B2B2C6
+// Background: #F8F9FA
+// Text? #211B44
+
 body {
   border-top: 4px solid #595992;
   background-color: #F8F9FA;
@@ -39,8 +45,11 @@ h1 {
   font-weight: 500;
 }
 
-// Purple Theme
-// Header: #595992
-// Divider: #B2B2C6
-// Background: #F8F9FA
-// Text? #211B44
+a {
+  text-decoration: none;
+  color: #5062C7;
+}
+a:visited {
+  color: #595992;
+}
+
