@@ -28,16 +28,20 @@ body {
 div.container {
   @include outer-container;
   padding-top: 30px;
+
+  @include media($max) {
+    margin: 0px 20px;
+  }
 }
 
 .page-content {
-  @include span-columns(8);
+  @include span-columns(7);
   border-left: em(1px) solid #B2B2C6;
-  padding-left: em(20px);
+  padding-left: em(40px);
 
-  @include media(max-width 480px) {
+  @include media($mobile) {
     @include span-columns(10);
-    @include shift(1);
+    // @include shift(1);
     padding-left: 0px;
     border-left: none;
   }
