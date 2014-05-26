@@ -7,12 +7,12 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
   <!-- Custom CSS -->
-  {<!-- % if site.github %}
-    <link rel="stylesheet" href="/css/all.css?sha={{ site.github.build_revision }}">
+  {% if site.github %}
+    <link rel="stylesheet" href="{{ "/css/main.css?sha={{ site.github.build_revision " | prepend: site.baseurl }}">
   {% else %}
-    <link rel="stylesheet" href="/css/all.css">
-  {% endif %} -->
-  <link rel="stylesheet" href="{{ "/css/main.css{% if site.github %}?sha={{ site.github.build_revision }}{% endif %}" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  {% endif %}
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'> -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans|Raleway:500' rel='stylesheet' type='text/css'>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
