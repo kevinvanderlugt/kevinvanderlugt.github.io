@@ -1,0 +1,51 @@
+nav.sidebar {
+  @include span-columns(3);
+  // @include row(table);
+
+  @include media($mobile) {
+    @include span-columns(0);
+    display: none;
+  }
+
+  text-align: center;
+
+  #headshot {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    border-radius: 78px;
+    border: 3px solid $primary-color;
+  }
+
+  .about {
+    h2 {
+      margin-bottom: 20px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+      font-size: em(16px);
+      letter-spacing: 1px;
+    }
+
+    .contact {
+      a, a:visited {
+        color: $primary-color;
+      }
+      i {
+        margin: 10px 10px;
+      }
+    }
+  }
+
+  @include media($tablet)
+  {
+    #headshot {
+      height: 100px;
+      width: 100px;
+    }
+
+    .about {
+      h2 {
+        font-size: em(14px);
+      }
+    }
+  }
+}
