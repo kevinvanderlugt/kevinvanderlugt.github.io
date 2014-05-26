@@ -18,11 +18,16 @@ nav.sidebar {
 
   .about {
     h2 {
+      margin: 0px;
       margin-bottom: 20px;
       font-family: 'Raleway', sans-serif;
       font-weight: 500;
-      font-size: em(16px);
+      font-size: em(18px);
       letter-spacing: 1px;
+    }
+
+    h2.tags {
+      font-size: em(16px);
     }
 
     .contact {

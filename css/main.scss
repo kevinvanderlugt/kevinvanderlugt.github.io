@@ -9,6 +9,7 @@
 // Purple Theme
 // Header: #595992
 $primary-color: #595992;
+$divider-color: #B2B2C6;
 // Divider: #B2B2C6
 // Background: #F8F9FA
 // Text? #211B44
@@ -36,7 +37,7 @@ div.container {
 
 .page-content {
   @include span-columns(7);
-  border-left: em(1px) solid #B2B2C6;
+  border-left: em(1px) solid $divider-color;
   padding-left: em(40px);
 
   @include media($mobile) {
@@ -47,7 +48,7 @@ div.container {
   }
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   color: #211B44;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -61,3 +62,21 @@ a:visited {
   color: $primary-color;
 }
 
+hr {
+  border: none;
+  border-top: em(1px) solid $divider-color;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+
+  .post-date {
+    font-size: em(14px);
+    color: #706F89;
+  }
+
+  .post-link {
+    margin-left: 10px;
+  }
+}
