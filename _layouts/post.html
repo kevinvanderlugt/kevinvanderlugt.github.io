@@ -10,4 +10,8 @@ layout: default
   <article class="post-content">
   {{ content }}
   </article>
+
+  <footer class="post-footer">
+     <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </footer>
 </section>
