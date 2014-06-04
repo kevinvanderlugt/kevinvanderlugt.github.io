@@ -77,8 +77,10 @@ ul {
   padding: 0px;
 
   .post-date {
+    display: inline-block;
     font-size: em(14px);
     color: #706F89;
+    width: 90px;
   }
 
   .post-link {
