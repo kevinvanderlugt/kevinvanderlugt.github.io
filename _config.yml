@@ -3,7 +3,7 @@ title: Kevin VanderLugt
 email: kevin.vanderlugt@gmail.com
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 baseurl: ""
-url: "http://kevinvanderlugt.github.io"
+url: "http://kevinvanderlugt.com"
 
 # Build settings
 markdown: kramdown
@@ -12,3 +12,9 @@ permalink: /:title
 sass:
     sass_dir: css/_sass
     style: :compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - .gitignore
