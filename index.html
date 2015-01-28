@@ -3,16 +3,16 @@ layout: default
 ---
 
 <div class="home">
-
-  {% for category in site.categories.keys %}
-    <h1>{{ category }}</h1>
-  {% endfor %}
-
   <h2>Projects</h2>
-  <ul class="projects">
+  <ul>
     {% for project in site.categories.projects %}
-      <li>
-        <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+      <li class="projects">
+        <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">
+          <div class="project-img">
+            <span class="title">{{ project.title }}</span>
+          </div>
+          <div class="description">{{ project.description | truncate: 120 }}</div>
+        </a>
       </li>
     {% endfor %}
   </ul>

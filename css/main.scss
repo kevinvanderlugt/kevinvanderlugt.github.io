@@ -10,6 +10,8 @@
 // Header: #595992
 $primary-color: #595992;
 $divider-color: #B2B2C6;
+
+$primary-text-color: #3E3D4B;
 // Divider: #B2B2C6
 // Background: #F8F9FA
 // Text? #211B44
@@ -22,7 +24,7 @@ $divider-color: #B2B2C6;
 body {
   border-top: 4px solid $primary-color;
   background-color: #F8F9FA;
-  color: #3E3D4B;
+  color: $primary-text-color;
 
   font-family: 'Open Sans', sans-serif;
 }
@@ -30,6 +32,7 @@ body {
 div.container {
   @include outer-container;
   padding-top: 30px;
+  padding-bottom: 30px;
 
   @include media($max) {
     margin: 0px 20px;
@@ -73,6 +76,7 @@ hr {
 }
 
 ul {
+  @include row();
   list-style-type: none;
   padding: 0px;
 
@@ -85,6 +89,53 @@ ul {
 
   .post-link {
     margin-left: 10px;
+  }
+}
+
+li.projects {
+  @include span-columns(5);
+  @include omega(2n);
+
+  @include media($tablet) {
+    @include span-columns(10);
+  }
+  background-color: white;
+
+
+  min-height: em(200px);
+
+  @include border-bottom-radius(3px);
+
+  margin-bottom: 10px;
+
+  .project-img {
+    border-top: solid 3px $divider-color;
+    @include border-top-radius(3px);
+
+    min-height: 150px;
+    width: 100%;
+    display:block;
+
+    background-color: $primary-color;
+    color: white;
+
+    .title {
+      font-size: em(22px);
+      padding: 5px;
+    }
+  }
+
+  .project-link {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+
+    .description {
+      width: 100%;
+      color: $primary-text-color;
+      font-size: em(14px);
+      margin: 5px;
+    }
   }
 }
 
