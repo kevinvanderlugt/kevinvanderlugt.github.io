@@ -93,49 +93,16 @@ ul {
 }
 
 li.projects {
-  @include span-columns(5);
-  @include omega(2n);
-
-  @include media($tablet) {
-    @include span-columns(10);
-  }
-  background-color: white;
-
-
-  min-height: em(200px);
-
-  @include border-bottom-radius(3px);
-
   margin-bottom: 10px;
 
-  .project-img {
-    border-top: solid 3px $divider-color;
-    @include border-top-radius(3px);
-
-    min-height: 150px;
-    width: 100%;
-    display:block;
-
-    background-color: $primary-color;
-    color: white;
-
-    .title {
-      font-size: em(22px);
-      padding: 5px;
-    }
+  .title {
+    font-size: 1em;
+    margin-bottom: 8px;
   }
 
-  .project-link {
-    display: block;
+  .description {
     width: 100%;
-    min-height: 100%;
-
-    .description {
-      width: 100%;
-      color: $primary-text-color;
-      font-size: em(14px);
-      margin: 5px;
-    }
+    font-size: em(14px);
   }
 }
 

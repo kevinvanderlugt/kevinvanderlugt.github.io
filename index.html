@@ -8,10 +8,8 @@ layout: default
     {% for project in site.categories.projects %}
       <li class="projects">
         <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">
-          <div class="project-img">
-            <span class="title">{{ project.title }}</span>
-          </div>
-          <div class="description">{{ project.description | truncate: 120 }}</div>
+          <h2 class="title">{{ project.title }}</h2>
+          <div class="description">{{ project.description }}</div>
         </a>
       </li>
     {% endfor %}
