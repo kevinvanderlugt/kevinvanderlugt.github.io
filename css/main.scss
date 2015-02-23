@@ -75,6 +75,10 @@ hr {
   border-top: em(1px) solid $divider-color;
 }
 
+.centered {
+  text-align: center;
+}
+
 ul {
   @include row();
   list-style-type: none;
