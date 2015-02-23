@@ -12,8 +12,8 @@ Walk Tracker was intended to be incredibly simplistic. While visiting Seville we
 ## Features
 There are really only two major features, track current walks using the GPS and review previous walks. This project was intended to be a small scope of features done really well.
 
-![Walk Tracker Map]({{ site.url }}/assets/walktracker/screenshot_map.PNG)
-![Walk Tracker List]({{ site.url }}/assets/walktracker/screenshot_list.PNG)
+![Walk Tracker Map]({{ site.url }}/assets/img/walktracker/screenshot_map.PNG)
+![Walk Tracker List]({{ site.url }}/assets/img/walktracker/screenshot_list.PNG)
 
 ## Want to help?
 
