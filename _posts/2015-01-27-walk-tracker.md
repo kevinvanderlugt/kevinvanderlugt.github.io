@@ -9,6 +9,8 @@ tags: []
 ## About
 Walk Tracker was intended to be incredibly simplistic. While visiting Seville we wanted to track all our walks around the various amazing streets. This project was created to help learn a full application in Swift while also accomplishing a simple walking tracker.
 
+[Check out the source code on Github](https://github.com/kevinvanderlugt/Swift-Walk-Tracker)
+
 ## Features
 There are really only two major features, track current walks using the GPS and review previous walks. This project was intended to be a small scope of features done really well.
 
