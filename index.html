@@ -8,7 +8,7 @@ layout: default
     {% for project in site.categories.projects %}
       <li class="projects">
         <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">
-          <h2 class="title">{{ project.title }}</h2>
+          <h3 class="title">{{ project.title }}</h3>
           <div class="description">{{ project.description }}</div>
         </a>
       </li>
