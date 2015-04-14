@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi,
 
-I'm an entreprenuer at heart currently freelancing and working on personal products while traveling the world.  I love working on difficult projects with clear value and exploring new cultures/food.  This blog is random bits of knowledge that I have gained while working abroad.
+I'm currently freelancing and working on personal products while traveling the world.  I love working on difficult projects with clear value and exploring new cultures/food.  This blog is random bits of knowledge that I have gained while working abroad.
 
 At the end of 2013, my wife Melanie and I decided to take a year (or two) off of working from Boeing and Expedia to travel and improve our software development skills. I currently reside in Chiang Mai, Thailand working from coffee shops and living the digital nomad lifestyle.
 
