@@ -17,4 +17,4 @@ Cheers!
 
 ---
 
-[Email me](mailto:kevin.vanderlugt@gmail.com) if you want to chat about software development, digital nomading, or new projects!
+[Email me](mailto:kevin.vanderlugt@gmail.com) if you want to chat about software development, homebrewing, or new projects!
