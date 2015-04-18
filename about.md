@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+published: false
 ---
 
 I'm currently freelancing and working on personal products while traveling the world.  I love working on difficult projects with clear value and exploring new cultures/food.  This blog is random bits of knowledge that I have gained while working abroad.

@@ -4,6 +4,7 @@ title: "Pomatillo"
 description: "Pomatillo easily tracks your project estimate and actual pomodoros. Build for Rails Rumble 2014"
 category: projects
 tags: []
+ranking: 200
 ---
 
 ## About

@@ -4,6 +4,7 @@ title: "Walk Tracker"
 description: "Walking is fun! Track your journeys. Walk tracker is an open-source walk tracking iOS application."
 category: projects
 tags: []
+ranking: 1000
 ---
 
 ## About
