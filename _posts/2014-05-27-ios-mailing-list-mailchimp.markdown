@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Building a custom iOS mailing list subscription with MailChimp"
+description: "A step by step guide for creating a mailing list with MailChimp in iOS"
 date:   2014-05-29 10:00:00
 categories: blog
 ---
@@ -9,16 +10,16 @@ One of the biggest regrets I have throughout releasing multiple applications is 
 
 The benefits of having a mailing list of users are probably obvious but I wish I added this simple feature into our initial releases.
 
-Some of the benefits of building your list:  
-- The ability to send emails when you release updates or new apps  
-- Cross promotion between apps for your brand  
-- Easier to interact with your customers to get app feedback  
+Some of the benefits of building your list:
+- The ability to send emails when you release updates or new apps
+- Cross promotion between apps for your brand
+- Easier to interact with your customers to get app feedback
 
 Enough about the benefits already, lets get down to building it.  I chose to use [MailChimp](http://www.mailchimp.com) mostly because I had experience with it.  They have a great free option and it's not too expensive once you get over 10,000 users but by then this list should be paying for itself.
 
 MailChimp has great coverage of their API documentation and even created a [wrapper](https://github.com/mailchimp/ChimpKit3) around their API for objective-c.  We will use NSUrlConnection instead to keep the dependencies small and because we only need to make one API call to subscribe our users.
 
-A few things we will need first before we can jump into the code.  
+A few things we will need first before we can jump into the code.
 
 1.  Create and save an API key from MailChimp.  Currently this can be done under Profile -> Extras -> API Keys but this could change.
 2.  You need to also have a list already generated that will be used to keep all your users.  Under your list settings you will need to get the List ID to use for our API call.
@@ -45,7 +46,7 @@ Next, we need to create a method for when the user submits their information.  F
     NSString *email = self.emailField.text;
     NSString *firstName = self.firstNameField.text;
     NSString *lastName = self.lastNameField.text;
-    
+
     // The MailChimp API that we are using was version 2.0, this may change
     // API_ZONE should be replaced with your API zone
     // This can be found at the end of your API key, mine was us8
@@ -54,10 +55,10 @@ Next, we need to create a method for when the user submits their information.  F
         [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]
                                 cachePolicy:NSURLRequestUseProtocolCachePolicy
                             timeoutInterval:60.0];
-    
+
     [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [urlRequest setHTTPMethod:@"POST"];
-    
+
     // Create the body using the native json generator
     NSMutableDictionary *body = [[NSMutableDictionary alloc] init];
 
@@ -69,9 +70,9 @@ Next, we need to create a method for when the user submits their information.  F
 
     NSMutableDictionary *emailDictionary = [[NSMutableDictionary alloc] init];
     [emailDictionary setObject:email forKey:@"email"];
-    
+
     [body setObject:emailDictionary forKey:@"email"];
-    
+
     // Merge variables are values passed into your list including user's name
     NSMutableDictionary *mergeVariables = [[NSMutableDictionary alloc] init];
     if(firstName) {
@@ -80,16 +81,16 @@ Next, we need to create a method for when the user submits their information.  F
     if(lastName) {
         [mergeVariables setObject:lastName forKey:@"LNAME"];
     }
-    
+
     [body setObject:mergeVariables forKey:@"merge_vars"];
-    
+
     // Optionally you can disable email verification
     [body setObject:@NO forKey:@"double_optin"];
-    
+
     NSData *requestBody = [NSJSONSerialization dataWithJSONObject:body options:0 error:nil];
-    
+
     [urlRequest setHTTPBody:requestBody];
-    
+
     [NSURLConnection sendAsynchronousRequest:urlRequest
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *response, NSData *responseData, NSError *error){
@@ -109,7 +110,7 @@ There is still lots of customizations that you can do based on the MailChimp doc
 
 The full code for this view controller can be found in [this gist](https://gist.github.com/kevinvanderlugt/7532b4cdb46f33068df2) for easier copying.
 
-Cheers!  
+Cheers!
 -Kevin
 
 ---

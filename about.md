@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+description: "iOS / Ruby Freelancer working with Swift, Objective-C and WatchKit"
 published: false
 ---
 

@@ -3,7 +3,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="viewport" content="width=device-width">
+  {% if page.description %}<meta name="description" content="{{ page.description }}">
+  {% else %}
   <meta name="description" content="{{ site.description }}">
+  {% endif %}
   <meta name="google-site-verification" content="ALk9qen8a31kRZZFcPe_163ZfeSRVj8kgSQV222bEXc" />
   <meta name="msvalidate.01" content="28906C9A9E3CB358058476FEC115C45A" />
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Generating a random letter string in Swift"
-description: "Learn how to generate a random character between A and Z in Swift. As a quick aside I thought it would be fun to compare to Ruby. "
+description: "Learn how to generate a random character between A and Z in Swift. As a quick aside I thought it would be fun to compare to Ruby."
 category: blog
 tags: [swift]
 ---

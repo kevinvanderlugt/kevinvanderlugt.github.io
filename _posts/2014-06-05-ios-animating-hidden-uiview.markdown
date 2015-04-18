@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Animating the hidden property on UIView"
+description: "A simple trick to allow you to animate the hidden property on UIView by using Objective-C categories"
 date:   2014-06-05 10:00:00
 categories: blog
 ---
@@ -38,12 +39,12 @@ All we need to do is animate the alpha value from 1 to 0 to hide or 0 to 1 to sh
         [self setHidden:hidden];
         return;
     }
-    
+
     if(self.hidden)
     {
         self.alpha = 0;
     }
-    
+
     [UIView animateWithDuration:duration
                           delay:0.0
                         options:UIViewAnimationCurveEaseInOut
@@ -72,7 +73,7 @@ Now we have a simple way to animate hiding our UIViews!
 One bonus might be to capture the alpha value during hiding an restore it during showing again.  My current method only sets the alpha to 1.0 always because I usually try to follow [YAGNI](http://www.google.co.th/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCMQFjAA&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FYou_aren't_gonna_need_it&ei=yNWOU5nqOore8AX_6YKADA&usg=AFQjCNENm4W76F7KgUIspFJfQFkPKeojTA&sig2=MknvDW-sIT_yDToRY23whA&bvm=bv.68235269,d.dGc).  Add the functionality when you need it.
 
 
-Cheers!  
+Cheers!
 -Kevin
 
 ---
