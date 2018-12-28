@@ -7,7 +7,6 @@
   {% else %}
   <meta name="description" content="{{ site.description }}">
   {% endif %}
-  <meta name="google-site-verification" content="ALk9qen8a31kRZZFcPe_163ZfeSRVj8kgSQV222bEXc" />
   <meta name="msvalidate.01" content="28906C9A9E3CB358058476FEC115C45A" />
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -15,5 +14,17 @@
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans|Raleway:500' rel='stylesheet' type='text/css'>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131509087-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131509087-1');
+  </script>
+
+
 
 </head>
