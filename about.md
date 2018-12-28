@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 description: "iOS / Ruby Freelancer working with Swift, Objective-C and WatchKit"
-published: false
+published: true
 ---
 
 I'm currently freelancing and working on personal products while traveling the world.  I love working on difficult projects with clear value and exploring new cultures/food.  This blog is random bits of knowledge that I have gained while working abroad.
@@ -15,6 +15,7 @@ I have been doing mobile development for iOS for 5 years and had apps reach in t
 We are returning to Seattle in May and will be looking for positions available as Ruby or iOS developers.
 
 Cheers!
+
 -Kevin
 
 ---
