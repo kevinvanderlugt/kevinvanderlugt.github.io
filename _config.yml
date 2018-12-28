@@ -3,7 +3,7 @@ title: Kevin VanderLugt
 email: kevin.vanderlugt@gmail.com
 description: "Portfolio and general chats about my iOS and WatchKit development. Currently working on learning swift, come join the journey!"
 baseurl: ""
-url: "http://kevinvanderlugt.com"
+url: "https://kevinvanderlugt.com"
 
 # Build settings
 markdown: kramdown
