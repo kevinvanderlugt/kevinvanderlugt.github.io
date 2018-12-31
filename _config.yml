@@ -1,7 +1,7 @@
 # Site settings
-title: Kevin VanderLugt
+title: Hi, I'm Kevin VanderLugt
 email: kevin.vanderlugt@gmail.com
-description: "Portfolio and general chats about my iOS and WatchKit development. Currently working on learning swift, come join the journey!"
+description: "Need help building an iOS app?  Confused about testing with Swift? I write about Swift, iOS Development & Testing, and other random projects."
 baseurl: ""
 url: "https://kevinvanderlugt.com"
 
