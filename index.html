@@ -3,18 +3,6 @@ layout: default
 ---
 
 <div class="home">
-  <h2>Projects</h2>
-  <ul>
-    {% for project in site.categories.projects %}
-      <li class="projects">
-        <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">
-          <h3 class="title">{{ project.title }}</h3>
-          <div class="description">{{ project.description }}</div>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-
   <h2>Posts</h2>
   <ul class="posts">
     {% for post in site.categories.blog %}
@@ -31,6 +19,18 @@ layout: default
       <li>
         <span class="post-date">{{ book.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ book.url | prepend: site.baseurl }}">{{ book.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Past Projects</h2>
+  <ul>
+    {% for project in site.categories.projects %}
+      <li class="projects">
+        <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">
+          <h3 class="title">{{ project.title }}</h3>
+          <div class="description">{{ project.description }}</div>
+        </a>
       </li>
     {% endfor %}
   </ul>
